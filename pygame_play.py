@@ -241,7 +241,7 @@ class VisualSnake:
             self.clock.tick(self.snake_speed)
         if self.game_over() == True:
             # snake dies
-            self.screen.fill(self.color.black)
+            self.screen.fill(self.color.white)
             pygame.draw.rect(self.screen, (255, 255, 255), (0, self.padding, self.game_width, self.game_height), 1)
             self.game_end_message()
             self.print_episode()
@@ -252,4 +252,4 @@ class VisualSnake:
         return self.snake_length
     
 p1 = VisualSnake()        
-p1.run_game(10000) 
+p1.run_game(100) 
