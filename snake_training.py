@@ -113,7 +113,7 @@ class LearnSnake:
             self.dir = "down"
 
 
-        if self.c1 >= self.screen_width // self.snake_size or self.c1 < 0 or self.r1 >= self.screen_height // self.snake_size or self.r1 < 0:
+        if self.c1 >= self.screen_width  or self.c1 < 0 or self.r1 >= self.screen_height  or self.r1 < 0:
             self.game_close = True
         self.c1 += self.c_change
         self.r1 += self.r_change

@@ -24,7 +24,7 @@ class VisualSnake:
         # scale adjusts size of whole board (use 1.0 or 2.0)
         self.scale = 2
         self.game_width = int(600 * self.scale)
-        self.game_height = int(400 * self.scale)
+        self.game_height = int(300 * self.scale)
         
         # padding for score & episode
         self.padding = int(30 * self.scale)
@@ -252,4 +252,4 @@ class VisualSnake:
         return self.snake_length
     
 p1 = VisualSnake()        
-p1.run_game(100) 
+p1.run_game(10000) 

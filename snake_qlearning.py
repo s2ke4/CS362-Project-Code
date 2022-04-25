@@ -13,6 +13,7 @@ class SnakeQAgent():
         self.min_eps = 0.001
         self.num_episodes = 10000
         self.table = np.zeros((2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4))
+        # table[state][action]
         self.env = LearnSnake()
         self.score = []
         self.survived = []
