@@ -142,11 +142,11 @@ class LearnSnake:
             self.food_row, self.food_column = self.generate_food()
             self.board[self.food_row][self.food_column] = 2
             self.snake_length += 1
-            reward = 10 # food eaten, so +1 reward
+            reward = 1 # food eaten, so +1 reward
         
         # death = -10 reward
         if self.game_close:
-            reward = -200
+            reward = -10
         self.survived += 1
         
         return self.get_state(), reward, self.game_close
